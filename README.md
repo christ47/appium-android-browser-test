@@ -26,6 +26,10 @@ npm install
 ```
 
 
+## Test Structure
+
+Test are located in the test file. The Spec file acts as the feature file. This contains all test to be run and the steps needed. The Page Object Files define the Locators and Actions for page objects
+
 ## Improvememnts
 
 Accessibility IDs/IDs/AndroidUIAutomatorIDs can be added to elements to make the test app more robust. This would allow for test to path to be maintained assuming the user journey remains the same. Similairly, an improvement in selectors would allow for locators to be easily reused, therefore making methods to be used with the paramaeter.
