@@ -1,10 +1,14 @@
 class MenuPage {
 
-    async clickFirstMenuIcon() {
-        await $("xpath://ion-list/ion-item[1]/ion-card/ion-img").click()
+    async clickFirstMealInMenu() {
+        await $('xpath://*[@id="root"]/ion-app/div[1]/ion-tabs/ion-router-outlet/div/ion-content/ion-item-group[1]/ion-list/ion-item[2]/div[1]/div[1]/div/h4').click()
     }
-    async chickenWingBitesAndStripsMenuItem() {
+    async firstFoodOption() {
         await $("xpath://ion-list/ion-item[2]").click();
+    }
+
+    async selectNoDrinkWithSteak() {
+        await $("xpath://ion-radio[@value=\"noDrink\"]").click();
     }
 
     async addFirstFoodOption() {
@@ -12,7 +16,7 @@ class MenuPage {
     }
 
     async addSecondFoodOption(){
-        await driver.$("xpath://ion-content/ion-radio-group[1]/ion-item[1]/ion-radio");
+        await $("xpath://ion-content/ion-radio-group[2]/ion-item[1]/ion-radio/div").click();
     }
 
     async addItemsToBasket() {
@@ -24,11 +28,8 @@ class MenuPage {
     }
 
     async clickFirstFoodMenu() {
-        $('xpath://*[@id="root"]/ion-app/div[1]/ion-tabs/ion-router-outlet/div/ion-footer/ion-button[1]//button').click()
+        $("xpath://ion-list/ion-item[2]/ion-card").click()
     }
-
-
-
 }
 
 export default new MenuPage()

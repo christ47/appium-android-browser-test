@@ -12,11 +12,10 @@ class TablePage {
         await browser.url('https://order.jdwetherspoon.com/venue/pubs/95/tables')
     }
     async enterTableNumberInOrder(){
-        await $$("xpath://*[@id=\"ion-input-1\"]")[0].addValue("56");
-    }
-
-    async clickContinueInOrder(){
-        await $("xpath://ion-footer/ion-button[1]").click();
+        const els1 = await driver.$$("xpath://*[@id=\"ion-input-1\"]");
+        await els1[0].addValue("56");
+        const el3 = await driver.$("xpath://ion-footer/ion-button[1]"); 
+        await el3.click();
     }
 }
 
