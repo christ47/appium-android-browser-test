@@ -8,11 +8,11 @@ class MenuPage {
     }
 
     async addSecondChickenWingSauce() {
-        await driver.$("xpath://ion-radio-group/ion-item[2]/ion-radio/div").click();
+        await $("xpath://ion-radio-group/ion-item[2]/ion-radio/div").click();
     }
 
     async addItemsToBasket(){
-        await driver.$("xpath://ion-footer/div[2]/div/ion-button[1]").click();
+        await $("xpath://ion-footer/div[2]/div/ion-button[1]").click();
     }
 
     async  goToBasket(){ 

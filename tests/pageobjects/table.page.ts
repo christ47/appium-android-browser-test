@@ -13,12 +13,12 @@ class TablePage {
     }
     async enterTableNumberInOrder(){
         //fixes bug 
-        await driver.$$("xpath://*[@id=\"ion-input-1\"]")[0].addValue("56");
+        await $$("xpath://*[@id=\"ion-input-1\"]")[0].addValue("56");
     }
 
     async clickContinueInOrder(){
         //fixes bug
-        await driver.$("xpath://ion-footer/ion-button[1]").click();
+        await $("xpath://ion-footer/ion-button[1]").click();
     }
 }
 
