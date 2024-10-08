@@ -1,7 +1,6 @@
 import WelcomePage from '../pageobjects/welcome.page.js'
 import TablePage from '../pageobjects/table.page.js'
 import BasketPage from '../pageobjects/basket.page.js'
-
 import MenuPage from '../pageobjects/menu.page.js'
 
 describe('Weatherspoon Website test', ()=>{
@@ -23,5 +22,4 @@ describe('Weatherspoon Website test', ()=>{
         await BasketPage.assetBasketItem()
         await BasketPage.assertBasketQuantity('1')
     })
-
 })

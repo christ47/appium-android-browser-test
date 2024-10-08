@@ -24,3 +24,8 @@ npm install
 ```sh
     npm run android.browser
 ```
+
+
+## Improvememnts
+
+Accessibility IDs/IDs/AndroidUIAutomatorIDs can be added to elements to make the test app more robust. This would allow for test to path to be maintained assuming the user journey remains the same. Similairly, an improvement in selectors would allow for locators to be easily reused, therefore making methods to be used with the paramaeter.
